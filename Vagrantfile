@@ -13,8 +13,10 @@ Vagrant.configure(2) do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "centos/7"
-  config.vm.hostname = "mysql-5-7"
+  config.vm.hostname = "mysql57"
   config.vm.provision "shell", path: "bootstrap.sh"
+  config.vm.define "mysql57" do |mysql57|
+  end
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
