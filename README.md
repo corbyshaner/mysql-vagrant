@@ -20,5 +20,5 @@ vagrant ssh
 mysql 
 
 # credentials
-MySQL default credentials, is highly recommended that you run mysql_secure_install script
+MySQL default credentials(root / no pwd), is highly recommended that you run mysql_secure_install script
 
