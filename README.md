@@ -1,12 +1,16 @@
 # mysql-vagrant
-Install mysql 5.7 vagrant machine
+Install mysql 5.6 vagrant machine
 
 # installation
-mkdir mysql-5-7
+mkdir mysql-5-6
 
-cd mysql-5-7
+cd mysql-5-6
 
-git clone https://github.com/altmannmarcelo/mysql-vagrant.git
+git init
+
+git remote add -t mysql-5-6 -f origin https://github.com/altmannmarcelo/mysql-vagrant.git
+
+git checkout mysql-5-6
 
 vagrant up
 
@@ -16,7 +20,5 @@ vagrant ssh
 mysql 
 
 # credentials
-user: root
-
-password: Passw0rd!
+MySQL default credentials, is highly recommended that you run mysql_secure_install script
 
